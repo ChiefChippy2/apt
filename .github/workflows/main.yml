@@ -22,7 +22,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt-get update
-          sudo apt-get install -qq build-essential expect sudo ccache
+          sudo apt-get install -qq build-essential expect sudo ccache triehash
           cmake -DCMAKE_BUILD_TYPE=Release  -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache .
           git config --global user.email "bot@cc2bots.cf"
           git config --global user.name "PyLint"
